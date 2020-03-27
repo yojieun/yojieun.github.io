@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 14px;
+    font-size: 10px;
 }
 
 body {
@@ -18,18 +18,37 @@ body {
         "info-arch";
 }
 
+.container {
+    margin: 0 auto;
+    width: auto;
+}
+
 .navbar, .hero, .overview, .problem, .solution, .research, .info-arch {
     font-size: 2.4rem;
     padding: 2rem;
 }
 
 .navbar {
-    background-color: skyblue;
+    background-color: #6BBAD3;
+    position: fixed;
+    display: inline;
+    padding-top: 3px;
+    width: auto;
+    height: 64px;
+    z-index: 1;
     grid-area: navbar;
 }
 
+#logo {
+    float: left;
+}
+
+#burgermenu {
+    float: right;
+}
+
 .hero {
-    background-image: url("/Collage_Final_Layouts_mobile.png");
+    background-image: url("../images/Collage_Final_Layouts_mobile.png");
     background-color: peachpuff;
     grid-area: hero;
 }
@@ -65,6 +84,6 @@ body {
             "hero hero hero"
             ". overview ."
             ". problem ."
-            ". solution ."
+            ". solution .";
     }
 }
