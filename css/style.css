@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "navbar"
+        "hero"
+        "overview"
+        "problem"
+        "solution"
+        "research"
+        "info-arch";
+}
+
+.navbar, .hero, .overview, .problem, .solution, .research, .info-arch {
+    font-size: 2.4rem;
+    padding: 2rem;
+}
+
+.navbar {
+    background-color: skyblue;
+    grid-area: navbar;
+}
+
+.hero {
+    background-image: url("/Collage_Final_Layouts_mobile.png");
+    background-color: peachpuff;
+    grid-area: hero;
+}
+
+.overview {
+    grid-area: overview;
+}
+
+.problem {
+    background-color: rgba(128, 164, 151, .15);
+    grid-area: problem;
+}
+
+.solution {
+    background-color: rgba(128, 164, 151, .07);
+    grid-area: solution;
+}
+
+.research {
+    grid-area: research;
+}
+
+.info-arch {
+    background-color: rgba(128, 164, 151, .07);
+    grid-area: info-arch;
+}
+
+@media (min-width: 50rem) {
+    body {
+        grid-template-columns: 2fr 8fr 2fr;
+        grid-template-areas: 
+            "navbar navbar navbar"
+            "hero hero hero"
+            ". overview ."
+            ". problem ."
+            ". solution ."
+    }
+}
