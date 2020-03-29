@@ -2,59 +2,270 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 10px;
-}
-
 body {
-    display: grid;
-    grid-template-areas: 
-        "navbar"
-        "hero"
-        "overview"
-        "problem"
-        "solution"
-        "research"
-        "info-arch";
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Open Sans", Open Sans, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
-.container {
-    margin: 0 auto;
-    width: auto;
+.home {
+    margin: 20px;
+    padding-bottom: 40px;
 }
 
-.navbar, .hero, .overview, .problem, .solution, .research, .info-arch {
-    font-size: 2.4rem;
-    padding: 2rem;
+@media (min-width: 600px) {
+    .home-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 }
 
 .navbar {
-    background-color: #6BBAD3;
+    background-color: white;
     position: fixed;
-    display: inline;
-    padding-top: 3px;
-    width: auto;
-    height: 64px;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    box-shadow: 0px 0px 10px 1px #C8C8C8;
     z-index: 1;
-    grid-area: navbar;
 }
 
 #logo {
     float: left;
 }
 
+#logo img {
+    max-width: 40px;
+}
+
 #burgermenu {
     float: right;
+    font-size: 30px;
 }
+
+.arrow {
+    color: #D7D7D7;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 38px;
+}
+
+.main-hero {
+    background-color: rgba(128, 164, 151, .07);
+    margin-top: 100px;
+    padding-top: 160px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-hero {
+    background-color: rgba(128, 164, 151, .07);
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.recent-project {
+    background-color: rgba(128, 164, 151, 0.5);
+    padding: 20px;
+}
+
+#recent {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+#intro {
+    color: #668393;
+    font-size: 22px;
+    padding-bottom: 30px;
+}
+
+h1, h2, h3, h4 {
+    color: #668393;
+    font-family: "Bitter", Bitter, sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    color: #80A497;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 10px;
+
+}
+
+h2 {
+    font-size: 46px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    color: #B4B4B4;
+    font-size: 18px;
+    font-weight: 600;
+}
+#p-name {
+    color: white;
+    font-weight: normal;
+    padding-bottom: 14px;
+    text-align: center;
+}
+
+#p-intro {
+    color: white;
+    font-size: 22px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.cta {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #80A497;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #80A497;
+    display: block;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    max-width: 250px;
+}
+
+.cta-hero {
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    position: relative;
+    text-align: center;
+    max-width: 250px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.container-small {
+    max-width: 700px;
+}
+
+@media (min-width: 600px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+/*
+.hero, .overview, .problem, .solution, .research, .info-arch {
+    font-size: 2.4rem;
+    padding: 2rem;
+} */
 
 .hero {
-    background-image: url("../images/Collage_Final_Layouts_mobile.png");
-    background-color: peachpuff;
-    grid-area: hero;
+    background-image: url("../images/binder-hero-img-mobile.png");
+    background-repeat:no-repeat;
+    background-color: rgba(128, 164, 151, .07);
+    margin-top: 100px;
+    padding-top: 90px;
+    padding-bottom: 60px;
 }
 
-.overview {
-    grid-area: overview;
+@media (min-width: 600px) {
+    .hero {
+        background-image: url("../images/binder-hero-img.png");
+        background-repeat:no-repeat;
+    }
+}
+
+.about {
+    margin: 20px;
+    padding-bottom: 20px;
+}
+
+.about-2 {
+    padding-bottom: 20px;
+}
+
+.about-3 {
+    padding-bottom: 60px;
+}
+
+#about-header {
+    font-size: 26px;
+    line-height: 175%;
+}
+
+.article-about1 {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.article-about2 {
+    margin-top: 40px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+
+.aha {
+    background-color: rgba(198, 145, 138, 0.2);
+    padding: 20px;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+p strong {
+    color: #C6918A;
+    font-weight: bold;
+
 }
 
 .problem {
@@ -67,23 +278,40 @@ body {
     grid-area: solution;
 }
 
-.research {
-    grid-area: research;
-}
-
 .info-arch {
     background-color: rgba(128, 164, 151, .07);
     grid-area: info-arch;
 }
 
-@media (min-width: 50rem) {
-    body {
-        grid-template-columns: 2fr 8fr 2fr;
-        grid-template-areas: 
-            "navbar navbar navbar"
-            "hero hero hero"
-            ". overview ."
-            ". problem ."
-            ". solution .";
-    }
+footer {
+    background-color: rgba(215, 215, 215, 0.4);
+    font-size: 14px;
+    padding: 40px 20px 20px 20px;
+    text-align: center;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 20px auto;
+    max-width: 270px;
+}
+
+.fa {
+    padding: 0px;
+    font-size: 36px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    color: #3A3A3A;
+}
+
+#connect {
+    color: #C6918A;
+    font-size: 24px;
+}
+
+hr {
+    border-top: 1px solid #C6918A;
 }

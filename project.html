@@ -13,60 +13,68 @@
     </head>  
 
 <body>
-    <div class="container">
 <!-- Nav bar -->
     <nav class="navbar">
-        <ul id="menu">
-            <li id="logo"><img class="ajlogo" src="images/AJ-logo-green.png" alt="personal logo"></li>
-            <li id="burgermenu"><i class="fa fa-bars"  aria-hidden="true"></i></li>
-            <li><a href="project.html">Work</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+        <div class="container">
+            <ul id="menu">
+                <li id="logo"><a href="index.html"><img src="images/AJ-logo-green.png" alt="personal logo"></a></li>
+                <li id="burgermenu"><i class="fa fa-bars"  aria-hidden="true"></i></li>
+            <!--        <li><a href="project.html">Work</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li> -->
+            </ul>
+        </div>
     </nav>
         
 <!-- Hero Section -->
     <header class="hero">
-        <h2>Binder</h2>
-        <p>Your education resources, all in one spot. Save. Share. Collaborate.</p>
-        <a href="https://www.figma.com/proto/Xl5xoCGfcNNgL6rd06ZVUD/High-Fidelity-Mockups?node-id=77%3A576&viewport=-269%2C-186%2C0.25&scaling=scale-down">View Prototype</a>
+        <div class="container">
+            <h1 id="p-name">Binder</h1>
+            <p id="p-intro">Your education resources, <br> all in one spot.<br> Save. Share. Collaborate.</p>
+            <div>
+                <img src="images/Binder_mockups.png" alt="Binder mockup image">
+            </div>
+            <a class="cta-hero" href="https://www.figma.com/proto/Xl5xoCGfcNNgL6rd06ZVUD/High-Fidelity-Mockups?node-id=77%3A576&viewport=-269%2C-186%2C0.25&scaling=scale-down">View Prototype</a>
+        </div>
     </header>
 
 <!-- Overview Section -->
     <section class="overview">
-        <div>
-            <h3>My Role</h3>
-            <p>UX Design, Visual Design, Branding &amp; Identity</p>
-            
-            <h3>Tools</h3>
-            <p>Pen/paper, Google Suite, Figma, Adobe Illustrator &amp; Photoshop, Usability Hub</p>
-        </div>
-        
-        <div>
-            <h3>Deliverables</h3>
-            <p>User Surveys, Competitive Analysis, Personas, User Stories and Flows, Wireframes, Branding &amp; Identity, Prototypes, User Testing, Visual Design</p>
+        <div class="container container-grid">
+            <div>
+                <h4>My Role</h4>
+                <p>UX Design, Visual Design, Branding &amp; Identity</p>
+
+                <h4>Tools</h4>
+                <p>Pen/paper, Google Suite, Figma, Adobe Illustrator &amp; Photoshop, Usability Hub</p>
+            </div>
+
+            <div>
+                <h4>Deliverables</h4>
+                <p>User Surveys, Competitive Analysis, Personas, User Stories and Flows, Wireframes, Branding &amp; Identity, Prototypes, User Testing, Visual Design</p>
+            </div>
         </div>
     </section>
         
     <section class="problem">
         <div>
-            <h2>Problem</h2>
+            <h3>Problem</h3>
             <p>Majority of educators use Google Drive to store and share files with their peers. Though it excels in many aspects, where it falls short for educators were search features, file organization and ability to save and share website links. Alternative methods and/or applications are being used to save and share links.</p>
         </div>
     </section>
         
     <section class="solution">
         <div>
-            <h2>Solution</h2>
+            <h3>Solution</h3>
             <p>Focused on providing an efficient single platform solution, Binder allows educators to share and collaborate on all types of files and resources, including website links that can now be directly loaded. Keywords can be used to tag files, producing more accurate search results.</p>
         </div>
     </section>
     
 <!-- Reseach and Discovery Section -->
     <section class="research">
-            <h4>RESEARCH AND DISCOVERY</h4>
+            <h5>RESEARCH AND DISCOVERY</h5>
         <article>
-            <h2>User Survey</h2>
+            <h3>User Survey</h3>
             <p>With the user survey, I wanted to get an insight on how people utilize  cloud-base storage services and how it’s meeting their needs. Three main focus were what they use it for, how often they utilize it, and pain points. Since I knew that I wanted to target educators, I created a section within the survey that asked additional questions to those who indicated that profession. Among educators, a common pain point was the lack of ability to load and share web links, like they would share files within folders.</p>
             <a href="https://drive.google.com/open?id=1AvjvUS1lk-bFvy3dU_c09E360SEYgx326SntPkbXxtE">View Survey Analysis</a>        
         <div>
@@ -75,7 +83,7 @@
         </article>
         
         <article>
-            <h2>Competitive Analysis</h2>
+            <h3>Competitive Analysis</h3>
             <p>With the knowledge of popular applications and the biggest pain points in mind, I focused my analysis on Google Drive, Pinterest and ShareFile. I wanted to closely look at where each excels and falls short. Through conducting a SWOT analysis and closely examining each service, I was able to uncover where one excels, the others fall short, like saving links and collaboration features. With Google Drive excelling in file storage and sharing for broad range of users, and ShareFile excelling in business solutions, there is a potential for a new competitor that offers the complete collaboration tool that can fit the needs of businesses, but also everyday users.</p>
             <div>
                 <img src="images/Google%20Drive.png" alt="google drive">
@@ -86,13 +94,13 @@
         </article>
         
         <article>
-            <h2>User Personas</h2>
+            <h3>User Personas</h3>
             <p>Based on survey results, follow-up interviews and analysis of the competition, created two user personas — A relatively new educator building up her resources, and a veteran educator who is also a leader with the school.</p>
             <a href="https://drive.google.com/open?id=1f2eirjHTS3cW0vjte3LQB3Sqs_HIHMC9">View User Personas</a>
         
             <div>
                 <ul>
-                    <li><h3>Jackie</h3></li>
+                    <li><h4>Jackie</h4></li>
                     <li><b>AGE</b> 25</li>
                     <li><b>LOCATION</b> Virginia</li>
                     <li><b>WORK</b> Elementary Teacher</li>
@@ -113,7 +121,7 @@
 
             <div>
                 <ul>
-                    <li><h3>Allison</h3></li>
+                    <li><h4>Allison</h4></li>
                     <li><b>AGE</b> 47</li>
                     <li><b>LOCATION</b> Michigan</li>
                     <li><b>WORK</b> High School Teacher</li>
@@ -138,9 +146,9 @@
 
 <!-- Information Architecture Section -->
     <section class="info-arch">
-        <h4>INFORMATION ARCHITECTURE</h4>
+        <h5>INFORMATION ARCHITECTURE</h5>
         <article>
-            <h2>User Stories</h2>
+            <h3>User Stories</h3>
             <p>With these goals and frustrations in mind, created user stories for potential tasks of users.</p>
             <br>
             <p>Narrowed down priorities and determined MVP features.</p>
@@ -192,7 +200,7 @@
         </article>
         
         <article>
-            <h2>User Flows &amp; Sitemap</h2>
+            <h3>User Flows &amp; Sitemap</h3>
             <p>Began sketching out user flows to visualize how users would complete each task. Created many iterations to narrow down a smooth process. User flows were used to create a sitemap that shows how these user flows come together, and establish a hierarchy. With the user flows and sitemaps established, mapped out the content strategy for the application.</p>
             <a href="https://drive.google.com/open?id=1d1Imi6kWehfXNfGSMAlGH364WUC8aDWX">View User Flows &amp; Sitemps</a>
         </article>
@@ -205,7 +213,7 @@
             </ul>
         
         <article>
-            <h2>Wireframes</h2>
+            <h3>Wireframes</h3>
             <p>Taking the user flows and site maps and translating them into a visual design began with sketching out how that could look like. The first iterations of the dashboard were very rough and one that changed the most throughout the sketching process. Once the dashboard was established, I moved on to the other screens. The main page was another one that went through multiple iterations.</p>
             <a href="https://www.figma.com/proto/iTR8aDuHFmvQUrTCwQjaiE/Binder-Wireframing-Template?node-id=77%3A576&viewport=-560%2C-642%2C0.25&scaling=scale-down">View Lo-Fi Prototype</a>
             <ul>
@@ -217,11 +225,11 @@
        </article>
         
         <article>
-            <h2>Low-Fidelity Usability Testing</h2>
+            <h3>Low-Fidelity Usability Testing</h3>
             <p>The wireframes were then converted into a clickable prototype and usability testing was conducted to determine the functionality of the navigation and UI elements.</p>
         
             <div>
-                <h4>Tasks</h4>
+                <h5>Tasks</h5>
                 <ol>
                     <li>Signing up for an account</li>
                     <li>Adding a piece of content</li>
@@ -238,7 +246,7 @@
                 <img src="images/lo-fi_prototype_issue.png" alt="lo-fi testing issues">
             </div>
             <div>
-                <h4>Takeaway</h4>
+                <h5>Takeaway</h5>
                 <p>A big takeaway from this instance was that I cannot assume users would know how to navigate something that is a relatively familiar setup. When presented with a new platform, users tend to approach it with a new perspective.</p>
                 <a href="https://docs.google.com/document/d/1Bx8SUiozG0fLZHH4jXRttP9_Xb_dTsdd5d3BH2Jcj_A/edit?usp=sharing">View Detailed Analysis</a>
             </div>
@@ -247,9 +255,9 @@
         
 <!-- Branding Section -->
     <section>
-        <h4>BRANDING</h4>
+        <h5>BRANDING</h5>
         <article>
-            <h2>Research &amp; Sketching</h2>
+            <h3>Research &amp; Sketching</h3>
             <p>Establishing a name and defining the brand began with looking back at survey results and the target audience. I wanted the brand to convey a message that it’s clean and organized. Through mind mapping, I listed out words related to education and task keywords. 
             <br><br>Then I began brainstorming by combining words that convey that message.</p>
             <div>
@@ -259,20 +267,20 @@
         </article>
 
         <article>
-            <h2>Refining</h2>
+            <h3>Refining</h3>
             <p>With the name taking on a simple concept, I wanted the logo to take on that simplistic concept as well: A platform that is a well organized digital binder of a user’s work. Took the stronger concepts from my sketches and converted them digitally.</p>
             <div>
-                <h4>Round One - digital concepts</h4>
+                <h5>Round One - digital concepts</h5>
                 <img src="images/logo_iterations_concepts.png" alt="logo digital concepts">
             </div>
             <div>
-                <h4>Round Two - refined versions</h4>
+                <h5>Round Two - refined versions</h5>
                 <img src="images/logo_iterations_refined.png" alt="logo refined versions">
             </div>
         </article>
 
         <article>
-            <h2>Style Guide</h2>
+            <h3>Style Guide</h3>
             <p>Binder is a brand that represents organization, one that is easy to recognize, and conveys a friendly message.</p>
             <a href="https://drive.google.com/open?id=1ks1YueYoT9KP-J7-1UVyCc7znhFB-j36">View Style Guide</a>
     
@@ -286,9 +294,9 @@
 
 <!-- Visual Design Section -->
     <section>
-        <h4>VISUAL DESIGN</h4>
+        <h5>VISUAL DESIGN</h5>
         <article>
-            <h2>High Fidelity Prototype</h2>
+            <h3>High Fidelity Prototype</h3>
                 <div>
                     <img src="images/HiFi_mainpage.png" alt="HiFi-prototype-mainpage">
                     <img src="images/PDF_collaboration-view.png" alt="HiFi-prototype-PDF-view">
@@ -298,28 +306,28 @@
                 <p>With the brand established, I built out the high fidelity prototype, ensuring it stays aligned with the brand. To ensure positive design designs were made, a series of preference tests were conducted on three elements. Adjustments were made to the style guide during this process according to what worked visually and practically during the design process with the preference and usability testing.</p>
         
             <div>
-                <h4>CTA Button Shape</h4>
+                <h5>CTA Button Shape</h5>
                 <img src="images/CTA-Button1.png" alt="CTA button shape option 1">
                 <img src="images/CTA-Button2.png" alt="CTA button shape option 2">
             </div>
             <div>
-                <h4>Text Treatment</h4>
+                <h5>Text Treatment</h5>
                 <img src="images/TextTreatment1.png" alt="Text Treatment option 1">
                 <img src="images/TextTreatment2.png" alt="Text Treatment option 2">
             </div>
             <div>
-                <h4>File Detail Modal Window Layout</h4>
+                <h5>File Detail Modal Window Layout</h5>
                 <img src="images/FileDetailModal_1.png" alt="Shareable Link option 1">
                 <img src="images/FileDetailModal_2.png" alt="Shareable Link option 2">
             </div>
         </article>
 
         <article>
-            <h2>Usability Testing &amp; Iterations</h2>
+            <h3>Usability Testing &amp; Iterations</h3>
             <p>With the UI elements tested and revised, the next step was to conduct user testing and test out those changes. The first round of usability testing consisted of four tasks: </p>
         
             <div>
-                <h4>Tasks</h4>
+                <h5>Tasks</h5>
                 <ol>
                     <li>reset password</li>
                     <li>add a new file</li>
@@ -353,11 +361,11 @@
         </article>
         
         <article>
-            <h2>Additional Iterations and Testing</h2>
+            <h3>Additional Iterations and Testing</h3>
             <p>In order to figure out the root of the issue and ensure the next round of iterations are successful, I conducted additional navigation and preference tests.</p>
         
                 <article>
-                    <h4>Navigation Testing</h4>
+                    <h5>Navigation Testing</h5>
                     <p>Users were shown the refined layouts of the commenting section and instructed to reply to a most recent comment. </p>
 
                     <div>
@@ -367,7 +375,7 @@
                 </article>
 
                 <article>
-                    <h4>A/B Testing</h4>
+                    <h5>A/B Testing</h5>
                     <ul>
                         <li>A follow-up question asked if the alternative design with the word “reply” added makes the task more clear. 70% of the users indicated that it does, and one user did not notice a difference in design.</li>
                         <li>I also conducted a preference test on the comment box, testing icon and text prompt.</li>
@@ -379,7 +387,7 @@
                 </article>
 
                 <article>
-                    <h4>Final Outcome</h4>
+                    <h5>Final Outcome</h5>
                     <p>I was able to use this feedback to fine tune my product.</p>
                     <ul>
                         <li>The word “reply” was added to the icon</li>
@@ -399,16 +407,16 @@
         <div>
         <img src="images/Collage_Final_Layouts_mobile.png" alt="final layouts">
         </div>
-        <h2>Conclusion + Takeaways</h2>
+        <h3>Conclusion + Takeaways</h3>
         <p>Binder was created to set itself apart from the competitors and become a tool specifically for educators that provides easy file management, and also allow them to share web links all within a single application. Through various user testing and feedback, Binder has become a tool that meets the needs of the user. Going into this project, I was worried about trying to enter a market with such strong competitors, and knowing that user preferences can vary drastically. But having a specific target audience helped alleviate the stress and focus on the specifics. The process had many successes and failures, but also surprising results. The file collaboration commenting features turned out to be more complicated than anticipated, and the icons and verbal prompts were not interpreted as expected. This refinement required the most testing and design iterations. I learned that User survey and usability testing questions need to be better worded and very specific. Instead of going straight into a task question, I need to setup the scene first, so that the type of user response is what I intended. I learned that you cannot assume that a user would be familiar with certain features/tasks just because those features exist on other applications users already use. This project taught me the importance of user feedback and how invaluable it is. If I had more time and resources, I would definitely do more user deeper testing for each iteration, testing out more variations. I would take time to think more carefully through each step and design decision. Lastly, I would build out the mobile application and conduct testing, to ensure that Binder truly is a cloud service that meets the demands of the user all-around. </p>
     </section>
 
 <!--FOOTER BELOW--> 
     <footer>
-    <h4>Let's Connect</h4>
-       <ul>
+    <h4 id="connect">Let's Connect</h4>
+       <ul class="footer-grid container-footer">
         <li>
-            <a href="www.linkedin.com/in/amyjoe">
+            <a href="mailto:amyjoe.design@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
             </a>
            </li>
@@ -431,6 +439,5 @@
         <hr>
         <p>©2020 Coded &amp; Designed by Amy Joe</p>
     </footer>
-    </div>
 </body>
 </html>
