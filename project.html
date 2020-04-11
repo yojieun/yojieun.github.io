@@ -18,13 +18,33 @@
         <div class="container">
             <ul id="menu">
                 <li id="logo"><a href="index.html"><img src="images/AJ-logo-green.png" alt="personal logo"></a></li>
-                <li id="burgermenu"><i class="fa fa-bars"  aria-hidden="true"></i></li>
-            <!--        <li><a href="project.html">Work</a></li>
+                
+                <li class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </li>
+                
+            <!-- 
+                  <li><a href="project.html">Work</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li> -->
             </ul>
         </div>
     </nav>
+    
+    
+<script>
+    var hamburger = document.querySelectorAll('.hamburger')[0];
+
+hamburger.addEventListener('click', function() {
+  hamburger.classList.toggle('open');
+});
+
+    </script>
+    
+    
         
 <!-- Hero Section -->
     <header class="hero">
@@ -55,7 +75,9 @@
             </div>
         </div>
     </section>
-        
+
+    
+    <div class="container container-grid">
     <section class="problem">
         <div>
             <h3 class="p-step-first">Problem</h3>
@@ -69,6 +91,7 @@
             <p>Focused on providing an efficient single platform solution, Binder allows educators to share and collaborate on all types of files and resources, including website links that can now be directly loaded. Keywords can be used to tag files, producing more accurate search results.</p>
         </div>
     </section>
+        </div>
 
 <!-- Reseach and Discovery Section -->
     <section class="process">
@@ -86,9 +109,9 @@
             <h3 class="p-step-first p-step">Competitive Analysis</h3>
             <p>With the knowledge of popular applications and the biggest pain points in mind, I focused my analysis on Google Drive, Pinterest and ShareFile. I wanted to closely look at where each excels and falls short. Through conducting a SWOT analysis and closely examining each service, I was able to uncover where one excels, the others fall short, like saving links and collaboration features. With Google Drive excelling in file storage and sharing for broad range of users, and ShareFile excelling in business solutions, there is a potential for a new competitor that offers the complete collaboration tool that can fit the needs of businesses, but also everyday users.</p>
             <div>
-                <img src="images/Google%20Drive.png" alt="google drive">
-                <img src="images/Pinterest.png" alt="pinterest">
-                <img src="images/ShareFile_icon-logo.png" alt="ShareFile">
+                <img class="comp-logo" src="images/Google%20Drive.png" alt="google drive">
+                <img class="comp-logo" src="images/Pinterest.png" alt="pinterest">
+                <img class="comp-logo" src="images/ShareFile_icon-logo.png" alt="ShareFile">
             </div>
             <a class="cta cta-wide" href="https://docs.google.com/document/d/1QvX3Vgna2YAh0ZYsSiv3BRR4Hm5fHAZ6vx2fneyo2Yo/edit?usp=sharing">View Competitive Analysis</a>
         </article>
@@ -98,9 +121,11 @@
             <p>Based on survey results, follow-up interviews and analysis of the competition, created two user personas — A relatively new educator building up her resources, and a veteran educator who is also a leader with the school.</p>
             <a class="cta" href="https://drive.google.com/open?id=1f2eirjHTS3cW0vjte3LQB3Sqs_HIHMC9">View User Personas</a>
         
+            <div class="container container-grid">
             <div class="persona">
+                <img src="images/persona-Jackie.png" alt="persona Jackie">
                 <ul>
-                    <li><h4>Jackie</h4></li>
+                    <li><h4 class="persona-name">Jackie</h4></li>
                     <li><b>AGE</b> 25</li>
                     <li><b>LOCATION</b> Virginia</li>
                     <li><b>WORK</b> Elementary Teacher</li>
@@ -108,20 +133,21 @@
                     <li>New educator gathering inspirations and resources</li>
                 </ul>
                 <ul>
-                    <li>Goals</li>
-                    <li>Save web links in project folders and be able to share them directly like other document files</li>
-                    <li>Be able to organize files upon uploading, with folder suggestions</li>
+                    <li><h5>Goals</h5></li>
+                    <li class="bullet">Save web links in project folders and be able to share them directly like other document files</li>
+                    <li class="bullet">Be able to organize files upon uploading, with folder suggestions</li>
                 </ul>
                 <ul>
-                    <li>Frustrations</li>
-                    <li>Reference links are shared a lot, and sometimes I have to make a Google Doc of links just to share more easily.</li>
-                    <li>At times, I forget to organize files once I upload them and it’s difficult to relocate files</li>
+                    <li><h5>Frustrations</h5></li>
+                    <li class="bullet">Reference links are shared a lot, and sometimes I have to make a Google Doc of links just to share more easily.</li>
+                    <li class="bullet">At times, I forget to organize files once I upload them and it’s difficult to relocate files</li>
                 </ul>
             </div>
 
             <div class="persona">
+                <img src="images/persona-Allison.png" alt="persona Allison">
                 <ul>
-                    <li><h4>Allison</h4></li>
+                    <li><h4 class="persona-name">Allison</h4></li>
                     <li><b>AGE</b> 47</li>
                     <li><b>LOCATION</b> Michigan</li>
                     <li><b>WORK</b> High School Teacher</li>
@@ -129,18 +155,19 @@
                     <li>Veteran resource Creator and Administrator</li>
                 </ul>
                 <ul>
-                    <li>Goals</li>
-                    <li>Organize files using keyword tags to specify a category and/or type of file</li>
-                    <li>Be able to search and find files quickly and easily</li>
-                    <li>Have the option to revert back to an archived version</li>
+                    <li><h5>Goals</h5></li>
+                    <li class="bullet">Organize files using keyword tags to specify a category and/or type of file</li>
+                    <li class="bullet">Be able to search and find files quickly and easily</li>
+                    <li class="bullet">Have the option to revert back to an archived version</li>
                 </ul>
                 <ul>
-                    <li>Frustrations</li>
-                    <li>Organization options are limited to just folders</li>
-                    <li>It’s hard to search quickly for a file, even if they are organized in folders</li>
-                    <li>Auto-save is great, but there are times when I need to go back to a previous version</li>
+                    <li><h5>Frustrations</h5></li>
+                    <li class="bullet">Organization options are limited to just folders</li>
+                    <li class="bullet">It’s hard to search quickly for a file, even if they are organized in folders</li>
+                    <li class="bullet">Auto-save is great, but there are times when I need to go back to a previous version</li>
                 </ul>
             </div>
+                </div>
         </article>
     </section>
 
