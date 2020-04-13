@@ -16,52 +16,50 @@
 <!-- Nav bar -->
     <nav class="navbar">
         <div class="container">
+            <a href="index.html" id="logo"><img src="images/AJ-logo-green.png" alt="personal logo"></a>
+            
             <ul id="menu">
-                <li id="logo"><a href="index.html"><img src="images/AJ-logo-green.png" alt="personal logo"></a></li>
-                
-                <li class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </li>
-                
-            <!-- 
-                  <li><a href="project.html">Work</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li> -->
+                <li><a href="project.html">Work</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="mailto:amyjoe.design@gmail.com">Contact</a></li>
             </ul>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
     
-    
 <script>
     var hamburger = document.querySelectorAll('.hamburger')[0];
+    var menu = document.querySelectorAll('#menu')[0];
 
-hamburger.addEventListener('click', function() {
-  hamburger.classList.toggle('open');
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('open');
+        menu.classList.toggle('open');
 });
-
-    </script>
+    
+/* When the event 'click' is initiated, it is set to toggle the hamburger 'open' and menu 'open' classes. */
+</script>
     
     
         
 <!-- Main Section -->    
-    <header class="about-hero about-hero-grid">
-        <div class="container container-small">
+    <header class="about-hero">
+        <div class="container container-grid">
             <div>
-            <h1>About Me</h1>
-            <p id="intro">Hi, I’m Amy Joe, a UX Designer based in Chicago with a background in graphic design and eCommerce marketing technologies.</p>
+                <h1>About Me</h1>
+                <p id="intro">Hi, I’m Amy Joe, a UX Designer based in Chicago with a background in graphic design and eCommerce marketing technologies.</p>
+            </div>
+            <div> </div>
+            <div>
+                <img src="images/AmyJoe.png" alt="Amy Joe picture">
             </div>
         </div>
-        <div> </div>
-        <div class="container">
-            <div>
-            <img src="images/AmyJoe.png" alt="Amy Joe picture">
-        </div>
-        </div>
     </header>
-    
     
     <div class="container container-small">
         <main class="about">
@@ -77,28 +75,26 @@ hamburger.addEventListener('click', function() {
             </article>
         </main>
     </div>
-       <div class="container container-small">
-        <article>
-            <div class="aha">
-                <p><strong>This was my aha! moment.</strong> I came to a realization that I was already immersed in user experience, and I wanted to dive in deeper and pursue a career focused more on user-centered design.</p>
-            </div>
-        </article>
-        <main class="about">
-            <article class="article-about2">
-                <p>A career shift journey began as I realized that I want to be a problem solver that lets the voice and needs of the users be heard. So after many months of wrestling with that thought, I decided to take the giant leap. It was a scary leap that came with a lot of doubts and uncertainty, to make a career shift in my mid-30s. But what gave me strength was the support of my family. I didn’t want to look back at my career and regret not going after my passion. I wanted to be an example to my daughters that you should strive to pursue what you love, and that it’s never too late.</p>
+       <div class="aha-box">
+            <article class="container container-small">
+                <div class="aha-text">
+                    <p><strong>This was my aha! moment.</strong> I came to a realization that I was already immersed in user experience, and I wanted to dive in deeper and pursue a career focused more on user-centered design.</p>
+                </div>
             </article>
-            
-        </main>
-    <main class="about about-2">
-        <a class="cta" href="https://drive.google.com/open?id=11clijkZZ8c6h3yhmRaGKQr72PRXEASXM">View Resume</a>
-    </main>
-        
-    </div>
+       </div>
+        <div class="container container-small">
+            <main class="about about-2">
+                <article class="article-about2">
+                    <p>A career shift journey began as I realized that I want to be a problem solver that lets the voice and needs of the users be heard. So after many months of wrestling with that thought, I decided to take the giant leap. It was a scary leap that came with a lot of doubts and uncertainty, to make a career shift in my mid-30s. But what gave me strength was the support of my family. I didn’t want to look back at my career and regret not going after my passion. I wanted to be an example to my daughters that you should strive to pursue what you love, and that it’s never too late.</p>
+                </article>
+                   <a class="cta" href="https://drive.google.com/open?id=11clijkZZ8c6h3yhmRaGKQr72PRXEASXM">View Resume</a>
+            </main>
+        </div>
         
 <!--FOOTER BELOW--> 
     <footer>
     <h4 id="connect">Let's Connect</h4>
-       <ul class="footer-grid container-footer">
+       <ul class="footer-grid">
         <li>
             <a href="mailto:amyjoe.design@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -120,7 +116,8 @@ hamburger.addEventListener('click', function() {
                 </a>
            </li>
         </ul> 
-        <hr>
+        <div class="divider">
+        </div>
         <p>©2020 Coded &amp; Designed by Amy Joe</p>
     </footer>
 </body>

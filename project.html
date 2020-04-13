@@ -16,45 +16,48 @@
 <!-- Nav bar -->
     <nav class="navbar">
         <div class="container">
+            <a href="index.html" id="logo"><img src="images/AJ-logo-green.png" alt="personal logo"></a>
+            
             <ul id="menu">
-                <li id="logo"><a href="index.html"><img src="images/AJ-logo-green.png" alt="personal logo"></a></li>
-                
-                <li class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </li>
-                
-            <!-- 
-                  <li><a href="project.html">Work</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li> -->
+                <li><a class="active" href="project.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mailto:amyjoe.design@gmail.com">Contact</a></li>
             </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
     
-    
 <script>
     var hamburger = document.querySelectorAll('.hamburger')[0];
+    var menu = document.querySelectorAll('#menu')[0];
 
-hamburger.addEventListener('click', function() {
-  hamburger.classList.toggle('open');
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('open');
+        menu.classList.toggle('open');
 });
-
-    </script>
+    
+/* When the event 'click' is initiated, it is set to toggle the hamburger 'open' and menu 'open' classes. */
+</script>
     
     
         
 <!-- Hero Section -->
     <header class="hero">
-        <div class="container">
-            <h1 id="p-name">Binder</h1>
-            <p id="p-intro">Your education resources, <br> all in one spot.<br> Save. Share. Collaborate.</p>
+        <div class="container container-grid">
+            <div>
+                <h1 id="p-name">Binder</h1>
+                <p id="p-intro">Your education resources, <br> all in one spot.<br> Save. Share. Collaborate.</p>
+                <a class="cta-hero" href="https://www.figma.com/proto/Xl5xoCGfcNNgL6rd06ZVUD/High-Fidelity-Mockups?node-id=77%3A576&viewport=-269%2C-186%2C0.25&scaling=scale-down">View Prototype</a>
+            </div>
             <div>
                 <img src="images/Binder_mockups.png" alt="Binder mockup image">
             </div>
-            <a class="cta-hero" href="https://www.figma.com/proto/Xl5xoCGfcNNgL6rd06ZVUD/High-Fidelity-Mockups?node-id=77%3A576&viewport=-269%2C-186%2C0.25&scaling=scale-down">View Prototype</a>
         </div>
     </header>
 
@@ -69,7 +72,7 @@ hamburger.addEventListener('click', function() {
                 <p>Pen/paper, Google Suite, Figma, Adobe Illustrator &amp; Photoshop, Usability Hub</p>
             </div>
 
-            <div>
+            <div class="column-2">
                 <h4>Deliverables</h4>
                 <p>User Surveys, Competitive Analysis, Personas, User Stories and Flows, Wireframes, Branding &amp; Identity, Prototypes, User Testing, Visual Design</p>
             </div>
@@ -94,6 +97,7 @@ hamburger.addEventListener('click', function() {
         </div>
 
 <!-- Reseach and Discovery Section -->
+    <div class="container">
     <section class="process">
             <h5 class="p-header">RESEARCH AND DISCOVERY</h5>
         <article>
@@ -170,6 +174,7 @@ hamburger.addEventListener('click', function() {
                 </div>
         </article>
     </section>
+</div>
 
 <!-- Information Architecture Section -->
     <section class="process process-shade">
@@ -441,7 +446,7 @@ hamburger.addEventListener('click', function() {
 <!--FOOTER BELOW--> 
     <footer>
     <h4 id="connect">Let's Connect</h4>
-       <ul class="footer-grid container-footer">
+       <ul class="footer-grid">
         <li>
             <a href="mailto:amyjoe.design@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -463,7 +468,8 @@ hamburger.addEventListener('click', function() {
                 </a>
            </li>
         </ul> 
-        <hr>
+        <div class="divider">
+        </div>
         <p>©2020 Coded &amp; Designed by Amy Joe</p>
     </footer>
 </body>

@@ -10,39 +10,41 @@
     <!-- Custom Styles -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/menu.js"></script>
     </head>  
 
 <body>
 <!-- Nav bar -->
     <nav class="navbar">
         <div class="container">
+            <a href="index.html" id="logo"><img src="images/AJ-logo-green.png" alt="personal logo"></a>
+            
             <ul id="menu">
-                <li id="logo"><a href="index.html"><img src="images/AJ-logo-green.png" alt="personal logo"></a></li>
-                
-                <li class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </li>
-                
-            <!-- 
-                  <li><a href="project.html">Work</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li> -->
+                <li><a href="project.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="mailto:amyjoe.design@gmail.com">Contact</a></li>
             </ul>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
     
-    
 <script>
     var hamburger = document.querySelectorAll('.hamburger')[0];
+    var menu = document.querySelectorAll('#menu')[0];
 
-hamburger.addEventListener('click', function() {
-  hamburger.classList.toggle('open');
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('open');
+        menu.classList.toggle('open');
 });
-
-    </script>
+    
+/* When the event 'click' is initiated, it is set to toggle the hamburger 'open' and menu 'open' classes. */
+</script>
     
     
         
@@ -50,7 +52,7 @@ hamburger.addEventListener('click', function() {
     <header class="main-hero">
         <div class="container">
             <h1>Hi, I'm Amy.</h1>
-            <p id="intro">A UX Designer based in Chicago. Creating human-centered design solutions by being the voice of the user.</p>
+            <p id="intro">A UX Designer based in Chicago.<br>Creating human-centered design solutions by being the voice of the user.</p>
             <a class="cta" href="about.html">Learn More About Me</a>
         </div>
         <div class="arrow">
@@ -58,24 +60,29 @@ hamburger.addEventListener('click', function() {
         </div>
     </header>    
     
-    <section class="recent-project">
-        <h4 id="recent">Recent Project</h4>
+    <section class="recent-section">
+        <div class="container">
+            <h4 id="recent">Recent Project</h4>
+        </div>
     </section>
-        <main class="home home-grid">
+    
+        <main class="home">
+            <div class="container container-grid">
             <div>
                 <img src="images/Binder_mockups.png" alt="Binder mockup image">
             </div>
-            <article>
+            <article class="recent-project">
                 <h3>Binder</h3>
                     <p>A cloud storage service for educators to efficiently share and collaborate on all types of files and resources in a single platform.</p>
                 <a class="cta" href="project.html">View Case Study</a>
             </article>
+            </div>
         </main>
         
 <!--FOOTER BELOW--> 
     <footer>
     <h4 id="connect">Let's Connect</h4>
-       <ul class="footer-grid container-footer">
+       <ul class="footer-grid">
         <li>
             <a href="mailto:amyjoe.design@gmail.com">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -97,7 +104,8 @@ hamburger.addEventListener('click', function() {
                 </a>
            </li>
         </ul> 
-        <hr>
+        <div class="divider">
+        </div>
         <p>©2020 Coded &amp; Designed by Amy Joe</p>
     </footer>
 </body>
